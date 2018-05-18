@@ -34,34 +34,28 @@
             <!-- menu profile quick info -->
             <!-- sidebar menu -->
             <!-- /menu footer buttons -->
-            <%@include file="structure/Menu.jsp" %>
+            <%@include file="vista/structure/Menu.jsp" %>
 
           </div>
         </div>
 
         <!-- top navigation -->
-        <%@include file="structure/TopNavigation.jsp" %>
+        <%@include file="vista/structure/TopNavigation.jsp" %>
 
         <!-- page content -->
-        <div class="right_col" role="main">
-          <div class="">
-            <div class="page-title">
-              <div class="title_center">
-                <h3>Plain Page</h3>
-              </div>
 
-            </div>
+
               <!--Aqui va todo el contenido nuevo-->
               
-              
+          <div id="page-body"/>
+              <!--Aqui va todo el contenido nuevo-->                                   
+              <!--Aqui va todo el contenido nuevo-->
               
               <!--Aqui va todo el contenido nuevo-->
-          </div>
-        </div>
         <!-- /page content -->
 
         <!-- footer content -->
-        <%@include file="structure/Footer.jsp" %>
+        <%@include file="vista/structure/Footer.jsp" %>
         
       </div>
     </div>

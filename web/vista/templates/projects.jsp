@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <title>Gentelella Alela! | </title>
 
     <!-- Bootstrap -->
     <link href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -17,29 +10,14 @@
     <!--ickeck-->
     <link href="${pageContext.request.contextPath}/assets/vendors/iCheck/skins/flat/green.css" rel="stylesheet" type="text/css"/>
     <link href="${pageContext.request.contextPath}/assets/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
-  </head>
+  
+<div class="right_col" role="main">
 
-  <body class="nav-md footer_fixed">
+  <div class="nav-md footer_fixed">
     <div class="container body">
       <div class="main_container">
-        <div class="col-md-3 left_col">
-          <div class="left_col scroll-view">
-            <div class="navbar nav_title" style="border: 0;">
-              <a href="index.jsp" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <!-- menu profile quick info -->
-            <!-- sidebar menu -->
-            <!-- /menu footer buttons -->
-            <%@include file="structure/Menu.jsp" %>
-
-          </div>
-        </div>
 
         <!-- top navigation -->
-        <%@include file="structure/TopNavigation.jsp" %>
 
         <div class="right_col" role="main">
           <div class="">
@@ -145,11 +123,13 @@
         </div>
 
         <!-- footer content -->
-        <%@include file="structure/Footer.jsp" %>
         
       </div>
     </div>
-
+</div>
+</div>
+        
+        
     <!-- jQuery -->
     <script src="${pageContext.request.contextPath}/assets/vendors/jquery/dist/jquery.js" type="text/javascript"></script>
     <!-- Bootstrap -->
@@ -164,6 +144,5 @@
     <script src="${pageContext.request.contextPath}/assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js" type="text/javascript"></script>
     
     <script src="${pageContext.request.contextPath}/assets/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
-  </body>
   
-</html>
+  

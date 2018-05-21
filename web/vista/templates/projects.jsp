@@ -1,34 +1,15 @@
-
-    <!-- Bootstrap -->
-    <link href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <!-- Font Awesome -->
-    <link href="${pageContext.request.contextPath}/assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <!-- NProgress -->
-    <link href="${pageContext.request.contextPath}/assets/vendors/nprogress/nprogress.css" rel="stylesheet" type="text/css"/>
-    <!-- Custom Theme Style -->
-    <link href="${pageContext.request.contextPath}/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
-    <!--ickeck-->
-    <link href="${pageContext.request.contextPath}/assets/vendors/iCheck/skins/flat/green.css" rel="stylesheet" type="text/css"/>
-    <link href="${pageContext.request.contextPath}/assets/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
-  
-<div class="right_col" role="main">
-
-  <div class="nav-md footer_fixed">
-    <div class="container body">
-      <div class="main_container">
-
-        <!-- top navigation -->
-
-        <div class="right_col" role="main">
-          <div class="">
+<div class="right_col" role="main">   
+    <div class="nav-md footer_fixed">
+      <div class="container body">
+        <div class="main_container">
+          
             <div class="page-title">
               <div class="title_left">
-                <h3>Projects <small>Listing design</small></h3>
+                <h3>Projects<small>Listing design</small></h3>
               </div>
-
             </div>
-            
-                  <div class="clearfix"></div>
+                                
+            <div class="clearfix"></div>
 
             <div class="row">
               <div class="col-md-12">
@@ -107,42 +88,16 @@
                             <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
                           </td>
                         </tr>
-                        
-
                     
                       </tbody>
                     </table>
-                    <!-- end project list -->
-
+                    
                   </div>
                 </div>
               </div>
-            </div>
-                  
-          </div>
+            </div>    
+                          
         </div>
-
-        <!-- footer content -->
-        
       </div>
     </div>
 </div>
-</div>
-        
-        
-    <!-- jQuery -->
-    <script src="${pageContext.request.contextPath}/assets/vendors/jquery/dist/jquery.js" type="text/javascript"></script>
-    <!-- Bootstrap -->
-    <script src="${pageContext.request.contextPath}/assets/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <!-- FastClick -->
-    <script src="${pageContext.request.contextPath}/assets/vendors/fastclick/lib/fastclick.js" type="text/javascript"></script>
-    <!-- NProgress -->
-    <script src="${pageContext.request.contextPath}/assets/vendors/nprogress/nprogress.js" type="text/javascript"></script>
-    <!-- Custom Theme Scripts -->
-    
-    <!--bootstrap progressbar-->
-    <script src="${pageContext.request.contextPath}/assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js" type="text/javascript"></script>
-    
-    <script src="${pageContext.request.contextPath}/assets/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
-  
-  

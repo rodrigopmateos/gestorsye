@@ -26,38 +26,38 @@
             <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <!--<li><a href="index.jsp">Dashboard</a></li>-->
-                    <li><a onclick="dashboard()">Dashboard</a></li>
+                    <li><a id="dashboard" onclick="template(this)">Dashboard</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-edit"></i>Proyectos<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a onclick="projects()">Proyectos</a></li>
+                    <li><a id="projects" onclick="template(this)">Proyectos</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-desktop"></i>Tareas<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="tareaspendientes.jsp">Tareas pendientes</a></li>
+                    <li><a id="tareas" onclick="template(this)">Tareas pendientes</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-table"></i> Trabajo <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="tables_dynamic.html">Registrar trabajo</a></li>
-                    <li><a href="tables_dynamic.html">Ver trabajo</a></li>
+                    <li><a id="registro_trabajo" onclick="template(this)">Registrar trabajo</a></li>
+                    <li><a id="ver_trabajo" onclick="template(this)">Ver trabajo</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-bar-chart-o"></i>Estadisticas<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="chartjs.html">Graficas</a></li>
+                    <li><a id="graficas" onclick="template(this)">Graficas</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-clone"></i>Historial<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+                    <li><a id="historial" onclick="template(this)">Fixed Sidebar</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-clone"></i>Usuarios<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="fixed_sidebar.html">Administrar usuarios</a></li>
+                    <li><a id="usuarios" onclick="template(this)">Administrar usuarios</a></li>
                 </ul>
             </li>
             <%
@@ -96,7 +96,34 @@
 <!-- /menu footer buttons -->
 
 <script>
-    function projects(){
-        $('#page-body').load("vista/templates/projects.jsp")
+    
+    function template(a){
+        switch(a.id){
+            case "dashboard":
+                //$('#page-body').load("index.jsp")
+                $(location).attr('href',"index.jsp");   
+                break;
+            case "projects":
+                $('#page-body').load("vista/templates/projects.jsp");                   
+                break;
+            case "tareas":
+                $('#page-body').load("vista/templates/tareaspendientes.jsp");
+                break;  
+            case "registro_trabajo":
+                $('#page-body').load("vista/templates/registrartrabajo.jsp");
+                break; 
+            case "ver_trabajo":
+                $('#page-body').load("vista/templates/vertrabajo.jsp");
+                break; 
+            case "graficas":
+                $('#page-body').load("vista/templates/graficas.jsp");
+                break;
+            case "historial":
+                $('#page-body').load("vista/templates/historial.jsp");
+                break; 
+            case "usuarios":
+                $('#page-body').load("vista/templates/usuarios.jsp");
+                break;
+        }
     }
 </script>
